@@ -8952,6 +8952,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -9072,6 +9073,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByHeroTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByHeroTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByHeroTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -9108,6 +9119,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -9216,6 +9228,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByFactionTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByFactionTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByFactionTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -9252,6 +9274,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -9360,6 +9383,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByKillsTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByKillsTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByKillsTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -9396,6 +9429,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -9504,6 +9538,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByDeathsTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByDeathsTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByDeathsTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -9540,6 +9584,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -9648,6 +9693,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByAssistsTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByAssistsTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByAssistsTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -9684,6 +9739,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -9792,6 +9848,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByIsLeaverTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByIsLeaverTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByIsLeaverTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -9828,6 +9894,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -9936,6 +10003,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByLevelTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByLevelTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByLevelTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -9972,6 +10049,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -10080,6 +10158,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByIsPartyTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByIsPartyTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByIsPartyTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -10116,6 +10204,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -10224,6 +10313,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByIsRandomTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByIsRandomTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByIsRandomTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -10260,6 +10359,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -10368,6 +10468,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByLaneTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByLaneTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByLaneTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -10404,6 +10514,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -10512,6 +10623,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByRoleTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByRoleTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByRoleTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -10548,6 +10669,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -10656,6 +10778,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByIsIntentionalFeedingTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByIsIntentionalFeedingTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByIsIntentionalFeedingTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -10692,6 +10824,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -10800,6 +10933,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByAwardTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByAwardTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByAwardTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -10836,6 +10979,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -10944,6 +11088,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByRoamLaneTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByRoamLaneTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByRoamLaneTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -10980,6 +11134,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -11088,6 +11243,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByIsVictoryTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByIsVictoryTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByIsVictoryTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -11124,6 +11289,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -11232,6 +11398,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByDurationMinutesTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByDurationMinutesTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByDurationMinutesTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -11268,6 +11444,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -11376,6 +11553,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByClusterTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByClusterTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByClusterTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -11412,6 +11599,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -11520,6 +11708,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByRegionTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByRegionTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByRegionTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -11556,6 +11754,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -11664,6 +11863,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByLobbyTypeTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByLobbyTypeTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByLobbyTypeTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -11700,6 +11909,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -11808,6 +12018,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByIsLeagueTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByIsLeagueTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByIsLeagueTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -11844,6 +12064,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -11952,6 +12173,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByIsSeriesTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByIsSeriesTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByIsSeriesTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -11988,6 +12219,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -12096,6 +12328,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByGameModeTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByGameModeTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByGameModeTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -12132,6 +12374,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -12240,6 +12483,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByIsStatsTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByIsStatsTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByIsStatsTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -12276,6 +12529,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -12384,6 +12638,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByGameVersionTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByGameVersionTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByGameVersionTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -12421,6 +12685,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -12539,6 +12804,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByTeamTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByTeamTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByTeamTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -12576,6 +12851,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -12694,6 +12970,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByHeroPerformanceTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByHeroPerformanceTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByHeroPerformanceTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -12731,6 +13017,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -12849,6 +13136,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupBySteamAccountIdTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupBySteamAccountIdTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupBySteamAccountIdTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -12888,6 +13185,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -13028,6 +13326,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupBySteamAccountIdHeroIdTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupBySteamAccountIdHeroIdTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupBySteamAccountIdHeroIdTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -13065,6 +13373,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -13183,6 +13492,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupBySteamAccountIdWithTeamTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupBySteamAccountIdWithTeamTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupBySteamAccountIdWithTeamTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -13222,6 +13541,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -13362,6 +13682,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupBySteamAccountIdHeroIdWithTeamTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupBySteamAccountIdHeroIdWithTeamTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupBySteamAccountIdHeroIdWithTeamTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -13399,6 +13729,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -13517,6 +13848,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupBySteamAccountIdAgainstTeamTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupBySteamAccountIdAgainstTeamTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupBySteamAccountIdAgainstTeamTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -13556,6 +13897,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -13696,6 +14038,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupBySteamAccountIdHeroIdAgainstTeamTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupBySteamAccountIdHeroIdAgainstTeamTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupBySteamAccountIdHeroIdAgainstTeamTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -13733,6 +14085,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -13851,6 +14204,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByLeagueIdTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByLeagueIdTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByLeagueIdTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -13887,6 +14250,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -13995,6 +14359,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByPositionTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByPositionTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByPositionTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -14031,6 +14405,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -14139,6 +14514,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByDateDayTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByDateDayTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByDateDayTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -14177,6 +14562,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -14307,6 +14693,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByDateDayHeroTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByDateDayHeroTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByDateDayHeroTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -14343,6 +14739,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -14451,6 +14848,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByTotalKillsTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByTotalKillsTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByTotalKillsTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -14487,6 +14894,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -14595,6 +15003,16 @@ namespace STRATZ.Models
             return ExceptField("avgAssists");
         }
 
+        public MatchGroupByGoldPerMinuteTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByGoldPerMinuteTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
+        }
+
         public MatchGroupByGoldPerMinuteTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
         {
             return WithScalarField("lastMatchDateTime", alias, new GraphQlDirective[] { include, skip });
@@ -14631,6 +15049,7 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "avgKills" },
                 new GraphQlFieldMetadata { Name = "avgDeaths" },
                 new GraphQlFieldMetadata { Name = "avgAssists" },
+                new GraphQlFieldMetadata { Name = "avgTowerDamage" },
                 new GraphQlFieldMetadata { Name = "lastMatchDateTime" },
                 new GraphQlFieldMetadata { Name = "firstMatchDateTime" }
             };
@@ -14737,6 +15156,16 @@ namespace STRATZ.Models
         public MatchGroupByHourTypeQueryBuilder ExceptAvgAssists()
         {
             return ExceptField("avgAssists");
+        }
+
+        public MatchGroupByHourTypeQueryBuilder WithAvgTowerDamage(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("avgTowerDamage", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchGroupByHourTypeQueryBuilder ExceptAvgTowerDamage()
+        {
+            return ExceptField("avgTowerDamage");
         }
 
         public MatchGroupByHourTypeQueryBuilder WithLastMatchDateTime(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
@@ -18836,7 +19265,8 @@ namespace STRATZ.Models
                 new GraphQlFieldMetadata { Name = "dotaPlus", IsComplex = true, QueryBuilderType = typeof(HeroDotaPlusLeaderboardRankTypeQueryBuilder) },
                 new GraphQlFieldMetadata { Name = "abilities", IsComplex = true, QueryBuilderType = typeof(PlayerAbilityTypeQueryBuilder) },
                 new GraphQlFieldMetadata { Name = "invisibleSeconds" },
-                new GraphQlFieldMetadata { Name = "dotaPlusHeroXp" }
+                new GraphQlFieldMetadata { Name = "dotaPlusHeroXp" },
+                new GraphQlFieldMetadata { Name = "variant" }
             };
 
         protected override string TypeName { get { return "MatchPlayerType"; } } 
@@ -19385,6 +19815,16 @@ namespace STRATZ.Models
         public MatchPlayerTypeQueryBuilder ExceptDotaPlusHeroXp()
         {
             return ExceptField("dotaPlusHeroXp");
+        }
+
+        public MatchPlayerTypeQueryBuilder WithVariant(string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            return WithScalarField("variant", alias, new GraphQlDirective[] { include, skip });
+        }
+
+        public MatchPlayerTypeQueryBuilder ExceptVariant()
+        {
+            return ExceptField("variant");
         }
     }
 
@@ -52633,6 +53073,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52649,6 +53090,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52665,6 +53107,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52681,6 +53124,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52697,6 +53141,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52713,6 +53158,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52729,6 +53175,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52745,6 +53192,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52761,6 +53209,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52777,6 +53226,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52793,6 +53243,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52809,6 +53260,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52825,6 +53277,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52841,6 +53294,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52857,6 +53311,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52873,6 +53328,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52889,6 +53345,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52905,6 +53362,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52921,6 +53379,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52937,6 +53396,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52953,6 +53413,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52969,6 +53430,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -52985,6 +53447,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -53001,6 +53464,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -53018,6 +53482,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -53035,6 +53500,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -53052,6 +53518,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -53071,6 +53538,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -53088,6 +53556,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -53107,6 +53576,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -53124,6 +53594,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -53143,6 +53614,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -53160,6 +53632,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -53176,6 +53649,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -53192,6 +53666,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -53210,6 +53685,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -53226,6 +53702,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -53242,6 +53719,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -53258,6 +53736,7 @@ namespace STRATZ.Models
         public decimal? AvgKills { get; set; }
         public decimal? AvgDeaths { get; set; }
         public decimal? AvgAssists { get; set; }
+        public decimal? AvgTowerDamage { get; set; }
         public long? LastMatchDateTime { get; set; }
         public long? FirstMatchDateTime { get; set; }
     }
@@ -53820,6 +54299,7 @@ namespace STRATZ.Models
         public ICollection<PlayerAbilityType> Abilities { get; set; }
         public int? InvisibleSeconds { get; set; }
         public int? DotaPlusHeroXp { get; set; }
+        public byte? Variant { get; set; }
     }
 
     public partial class MatchPlayerStatsType
