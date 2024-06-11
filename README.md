@@ -1,0 +1,1 @@
+STRATZ GraphQL models for C# (https://stratz.com)
