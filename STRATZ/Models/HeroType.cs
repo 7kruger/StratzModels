@@ -23,6 +23,7 @@ namespace STRATZ
         public ICollection<HeroRoleType> Roles { get; set; }
         public HeroLanguageType Language { get; set; }
         public ICollection<HeroTalentType> Talents { get; set; }
+        public ICollection<HeroFacetType> Facets { get; set; }
         public HeroStatType Stats { get; set; }
     }
 }

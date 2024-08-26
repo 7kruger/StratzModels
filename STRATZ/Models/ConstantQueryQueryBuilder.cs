@@ -37,7 +37,8 @@ namespace STRATZ
                 new GraphQlFieldMetadata { Name = "proSteamAccounts", IsComplex = true, QueryBuilderType = typeof(ProSteamAccountTypeQueryBuilder) },
                 new GraphQlFieldMetadata { Name = "popularTeamIds", IsComplex = true, QueryBuilderType = typeof(TeamTypeQueryBuilder) },
                 new GraphQlFieldMetadata { Name = "casters", IsComplex = true, QueryBuilderType = typeof(SteamAccountTypeQueryBuilder) },
-                new GraphQlFieldMetadata { Name = "tiWinners", IsComplex = true, QueryBuilderType = typeof(SteamAccountTypeQueryBuilder) }
+                new GraphQlFieldMetadata { Name = "tiWinners", IsComplex = true, QueryBuilderType = typeof(SteamAccountTypeQueryBuilder) },
+                new GraphQlFieldMetadata { Name = "facets", IsComplex = true, QueryBuilderType = typeof(FacetTypeQueryBuilder) }
             };
 
         protected override string TypeName { get { return "ConstantQuery"; } } 
@@ -336,6 +337,23 @@ namespace STRATZ
         public ConstantQueryQueryBuilder ExceptTiWinners()
         {
             return ExceptField("tiWinners");
+        }
+
+        public ConstantQueryQueryBuilder WithFacets(FacetTypeQueryBuilder facetTypeQueryBuilder, QueryBuilderParameter<short?> gameVersionId = null, QueryBuilderParameter<Language> language = null, string alias = null, IncludeDirective include = null, SkipDirective skip = null)
+        {
+            var args = new List<QueryBuilderArgumentInfo>();
+            if (gameVersionId != null)
+                args.Add(new QueryBuilderArgumentInfo { ArgumentName = "gameVersionId", ArgumentValue = gameVersionId} );
+
+            if (language != null)
+                args.Add(new QueryBuilderArgumentInfo { ArgumentName = "language", ArgumentValue = language} );
+
+            return WithObjectField("facets", alias, facetTypeQueryBuilder, new GraphQlDirective[] { include, skip }, args);
+        }
+
+        public ConstantQueryQueryBuilder ExceptFacets()
+        {
+            return ExceptField("facets");
         }
     }
 }

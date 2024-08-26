@@ -35,5 +35,6 @@ namespace STRATZ
         public ICollection<TeamType> PopularTeamIds { get; set; }
         public ICollection<SteamAccountType> Casters { get; set; }
         public ICollection<SteamAccountType> TiWinners { get; set; }
+        public ICollection<FacetType> Facets { get; set; }
     }
 }
