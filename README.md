@@ -1,6 +1,7 @@
 # STRATZ GraphQL Models
 
-[![NuGet Badge](https://buildstats.info/nuget/7kruger.STRATZ?includePreReleases=true)](https://www.nuget.org/packages/7kruger.STRATZ)
+[![NuGet Version](https://img.shields.io/nuget/v/7kruger.stratz)](https://www.nuget.org/packages/7kruger.STRATZ)
+[![Downloads](https://img.shields.io/nuget/dt/7kruger.stratz)](https://www.nuget.org/packages/7kruger.STRATZ)
 
 Nuget package
 -------------
